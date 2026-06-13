@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/holo-deck/static/js/main.efdc4cc3.js",
+    "index.html": "/holo-deck/index.html",
+    "main.efdc4cc3.js.map": "/holo-deck/static/js/main.efdc4cc3.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.efdc4cc3.js"
+  ]
+}
