@@ -41,7 +41,6 @@ export default function App() {
         .filter(
           (c) =>
             (c.id && c.id.toLowerCase().includes(q)) ||
-            (c.name && c.name.toLowerCase().includes(q)) ||
             (c.name && c.name.toLowerCase().includes(q))
         )
         .slice(0, 15)
