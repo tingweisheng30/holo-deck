@@ -349,22 +349,18 @@ export default function App() {
               }}
             >
               {[
-                modal.type && '类型：' + modal.type,
-                modal.color && '颜色：' + modal.color,
-                modal.life && 'Life：' + modal.life,
-                modal.oshiSkill &&
-                  '\n推し技能：' +
-                    modal.oshiSkill.name +
-                    '\n' +
-                    modal.oshiSkill.effect,
-                modal.spSkill &&
-                  '\nSP技能：' +
-                    modal.spSkill.name +
-                    '\n' +
-                    modal.spSkill.effect,
-              ]
-                .filter(Boolean)
-                .join('\n')}
+  modal.type && '类型：' + modal.type,
+  modal.color && '颜色：' + modal.color,
+  modal.hp && 'HP：' + modal.hp,
+  modal.life && 'Life：' + modal.life,
+  modal.oshiSkill && '\n推し技能：' + modal.oshiSkill.name + '\n' + modal.oshiSkill.effect,
+  modal.spSkill && '\nSP技能：' + modal.spSkill.name + '\n' + modal.spSkill.effect,
+  modal.effectC && '\n效果C：' + modal.effectC.name + '\n' + modal.effectC.effect,
+  modal.effectB && '\n效果B：' + modal.effectB.name + '\n' + modal.effectB.effect,
+  modal.effectG && '\n效果G：' + modal.effectG.name + '\n' + modal.effectG.effect,
+  modal.art1 && '\n艺术1：' + modal.art1.name + '（伤害：' + modal.art1.damage + '）' + (modal.art1.effect ? '\n' + modal.art1.effect : ''),
+  modal.art2 && '\n艺术2：' + modal.art2.name + '（伤害：' + modal.art2.damage + '）' + (modal.art2.effect ? '\n' + modal.art2.effect : ''),
+].filter(Boolean).join('\n')}
             </pre>
             <button
               onClick={() => setModal(null)}
