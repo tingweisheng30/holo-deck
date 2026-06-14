@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
-const DATA_URL = 'https://hololive-cardgame.github.io/cards/cards.json';
+//const DATA_URL = 'https://hololive-cardgame.github.io/cards/cards.json';
+const DATA_URL = 'https://raw.githubusercontent.com/hololive-cardgame/cards/main/cards.json';
 const IMG_BASE = 'https://hololive-cardgame.github.io/cards/';
 
 export default function App() {
