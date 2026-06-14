@@ -41,7 +41,7 @@ export default function App() {
           (c) =>
             (c.id && c.id.toLowerCase().includes(q)) ||
             (c.name && c.name.toLowerCase().includes(q)) ||
-            (c.nameZh && c.nameZh.toLowerCase().includes(q))
+            (c.name && c.name.toLowerCase().includes(q))
         )
         .slice(0, 15)
     );
